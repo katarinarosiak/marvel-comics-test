@@ -1,4 +1,4 @@
-# marvel-comics
+# marvel-comics-task describtion
 
 Specification: 
 The Comics Test
@@ -14,6 +14,10 @@ We are not too fussy about the layout or design of the generated HTML
 page, but the HTML itself should be well-formatted.
 You should supply instructions on how to install and run your project.
 The result of your test should be delivered on a repository on Github, Bitbucket or similar.
+
+
+
+# my-notes:
 
 - generate HTML page that lists characters from a Marvel-story 
 - pick a random story for a chosen character
@@ -54,8 +58,9 @@ http(s)://gateway.marvel.com/
 data.results.name = "Iron Man"
 
 - pick a random story 
-- 
-
+- get all the characters names from that story 
+- get info about those characters: 
 
 - need to pre-authorized the website URL (API access panel)
--  
+- 
+1. parse the name 
