@@ -13,7 +13,7 @@ The page displays:
 
 
 # Instructions on installing and running the project
-1. The Marvel-comics project make a use of Marvel API. In order to run it you will need to register on (Marvel Developer Page)[http://developer.marvel.com/docs] to get a private and public API keys. 
+1. The Marvel-comics project make a use of Marvel API. In order to run it you will need to register on [Marvel Developer Page](http://developer.marvel.com/docs) to get a private and public API keys. 
 2. Once aquired you can clone this repository to your local environment. Simply direct to the desired directory in your command line tool and enter `git clone https://github.com/katarinarosiak/marvel-comics-test`.
 3. Direct to `marvel-comics-test` directory on your terminal and install needed dependecies by running `npm install`.
 4. Create `.env` file and add environmental variables. Add your Marvel public and private keys. 
