@@ -4,58 +4,95 @@ html, body {
 	font-family: sans-serif;
 }
 
+@font-face {
+	font-family: "Adventure";
+	src: local("Adventure"),
+	 url("./fonts/adventure/Adventure.otf") format("truetype");
+	font-weight: bold;
+}
+
+.font-face-gm {
+	font-family: 'Adventure';
+}
+
 body {
 	background-color: rgb(31, 31, 31);
 	color: aliceblue;
-	display:flex;
 	justify-content: center;
 	height: 100vh;
 	align-items: center;
 }
 
+h1 {
+	font-size: 50px;
+}
+
+.story-title {
+	margin: 30px;
+	text-align: center;
+}
+
+.text-span {
+	color: aquamarine;
+}
+
+.character-title {
+	text-align: center;
+}
+
+.description {
+	font-size: 22px;
+	text-align: center;
+}
+
+.description p{
+	margin-left:25px;
+	margin-right: 25px;
+}
+
 .character-card {
-	height: 500px;
+	height: 400px;
+	width: 300px;
 	margin: 50px;
 	box-shadow: 5px 5px 20px black;
 	overflow: hidden;
-	margin-bottom: 30%;
 }
 
 
 .characters {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
 }
 
 img {
-	height: 500px;
-	width: 350px;
+	height: 400px;
 	border-radius: 3px;
 	transition: .5s;
 }
 
 .intro {
-	height: 80px;
-	width: 350px;
+	height: 116px;
+	width: 300px;
 	padding: 5px;
 	box-sizing: border-box;
 	position: absolute;
 	background: rgb(27, 27, 27, .5);
 	color: white;
-	bottom: 21%;
+	margin-top: -120px;
 	transition: .5s;
 }
 
 h2 {
 	margin: 10px;
-	font-size: 40px;
+	font-size: 34px;
 }
 
-p {
-	font-size: 16px;
+.char-description {
+	font-size: 15px;
 	margin:20px;
 	display: none;
-	/* visibility: none; */
-	opacity: 0;
+  opacity: 0;
 }
 
 .character-card:hover{
@@ -63,17 +100,22 @@ p {
 }
 
 .character-card:hover .intro {
-	height: 252px;
-	bottom: 20%;
+	height: 276px;
 	background: rgb(27, 27, 27, .5);
+	margin-top: -276px;
 }
 
-.character-card:hover p{
+.character-card:hover .char-description{
 	opacity: 1;
-	/* visibility: visible; */
 	display:block;
 }
 
 .character-card:hover img{
 	transform: scale(1.1) rotate(-3deg);
+} 
+
+.footer {
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 30px;
 }

@@ -8,7 +8,7 @@ function Character({ character }) {
 			<img src={thumbnailSrc} alt="Nature" width="400" height="700"></img>
 			<div className='intro'>
 				<h2>{character.name}</h2>
-				<p>{character.description === "" ? "This character doesn't have a description" : character.description}</p>
+				<p className="char-description">{character.description === "" ? "This character doesn't have a description" : character.description}</p>
 			</div>
 		</div>
 	)
