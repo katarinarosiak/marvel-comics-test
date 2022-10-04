@@ -35,7 +35,6 @@ function App() {
   }, []);
 
   const rerenderContent = (e) => {
-    console.log(update);
     setUpdate(true);
   }
 
